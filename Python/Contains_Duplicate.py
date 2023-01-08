@@ -18,6 +18,7 @@ space complexity:
      Sorting: O(n)
 1. First sort
 """
+List = [2, 3, 1, 5, 9, 1, 1, 9, 10, 5]
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
