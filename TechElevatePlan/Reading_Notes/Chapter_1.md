@@ -33,3 +33,6 @@ So it takes N + 1 number of steps.
 In the worst-case scenario, where we’re inserting a value at the beginning of a set, the computer needs to search N cells to ensure that the set doesn’talready contain that value, another N steps to shift all the data to the right, and another final step to insert the new value.
 - Best case scenario - end of the set - N + 1 
 - Worst case scenario - beginning of the set - 2N + 1
+
+
+#### Exercise Solution and Correction
