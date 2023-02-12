@@ -1,5 +1,8 @@
 # Data_Structures_and_Algorithms
-Practice for DSA
+Practice for DSA    
+
+https://techelevate.gitbook.io/study-guide/data-structures-and-algorithms/2-a
+
 
 ### Chapter 1 [9/Feb/2023]  
 ## Measuring Speed 
@@ -25,4 +28,8 @@ It is similar to insertion, we need to make room for spaces in the array. The wo
 [We can say then, that for an array containing N elements, the maximum number of steps that deletion would take is N steps.]
 
 ## Sets
-Sets do not allow dublicate data. Reading and Searching in a set is the same for an array. Inserting on the other hand is a bit different. The set first needs to be search to ensure that there's no similar element existing in the array before placing the element in there. So it takes N + 1 number of steps.
+Sets do not allow dublicate data. Reading and Searching in a set is the same for an array. Inserting on the other hand is a bit different. The set first needs to be search to ensure that there's no similar element existing in the array before placing the element in there. 
+So it takes N + 1 number of steps.
+In the worst-case scenario, where we’re inserting a value at the beginning of a set, the computer needs to search N cells to ensure that the set doesn’talready contain that value, another N steps to shift all the data to the right, and another final step to insert the new value.
+- Best case scenario - end of the set - N + 1 
+- Worst case scenario - beginning of the set - 2N + 1
