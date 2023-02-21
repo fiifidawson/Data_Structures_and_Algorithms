@@ -20,3 +20,18 @@ string combinations:
 ]
 
 Due to the inner for loop, time complexity is O(N^2) for the two-character strings whilst it's O(N^3) for the two inner for loops.
+
+## Array Sample
+We create a function that takes a small sample of an array. We expect to have very large arrays, so our sample is just the first, middlemost, and last value from the array.
+O(1)
+
+## Average Celsius Reading
+To get the average Celsius temperature, our algorithm does two things: first, it converts all the readings from Fahrenheit to Celsius. Then, it calculates the mean average of all the Celsius numbers.
+ALthough there are two for loops, time complexity is N + N (plus some few constant steps) not N^2 since they are not nested.
+
+## Clothing Labels
+This code contains nested loops, so it’s tempting to declare this algorithm to be O(N^2). However, we need to analyze this case a little more carefully. While code containing nested loops often is O(N^2), in this case, it’s not. Nested loops that result in O(N^2) occur when each loop revolves around N. In our case, however, while our outer loop runs N times, our inner loop runs a constant five times. That is, this inner loop will always run five times no matter what N is.
+
+Algorithm runs 5N times, this is reduced to O(N)
+
+## Count the Ones
