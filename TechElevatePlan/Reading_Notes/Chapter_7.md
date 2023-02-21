@@ -37,5 +37,8 @@ Algorithm runs 5N times, this is reduced to O(N)
 ## Count the Ones
 The two loops are iterating over two completely different things. The outer loop is iterating over the inner arrays, and the inner loop is iterating over the actual numbers. At the end of the day, our inner loop only runs for as many numbers as there are in total. Because of this, we can say that N represents how many numbers there are. And since our algorithm simply processes each number, the function’s time complexity is O(N).
 
-
 ## Palindrome Checker
+A palindrome is a word or phrase that reads the same both forward and backward.
+Big O = N/2 = N
+
+## Get all the Products
