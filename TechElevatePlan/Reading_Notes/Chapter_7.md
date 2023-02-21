@@ -35,3 +35,6 @@ This code contains nested loops, so it’s tempting to declare this algorithm to
 Algorithm runs 5N times, this is reduced to O(N)
 
 ## Count the Ones
+
+
+## Palindrome Checker
