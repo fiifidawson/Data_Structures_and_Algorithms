@@ -29,4 +29,9 @@ Ordered Array = O(logN)
 Hash Map = O(1)
 
 ## One-Directional Lookups
+It’s important to point out that the ability to find any value within the hash table in a single step only works if we know the value’s key.
 
+If, on the other hand, we want to use a value to find its associated key, we cannot take advantage of the hash table’s fast lookup ability.
+we use the key to find the value. The value does not determine the key’s location
+
+## Dealing with Collisions
