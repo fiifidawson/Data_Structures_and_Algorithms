@@ -35,3 +35,17 @@ If, on the other hand, we want to use a value to find its associated key, we can
 we use the key to find the value. The value does not determine the key’s location
 
 ## Dealing with Collisions
+Trying to add data to a cell that is already filled is known as a collision.
+separate chaining: When a collision occurs, instead of placing a single value in the cell, it places in it a reference to an array.
+
+## Making an Efficient Hash Table
+Ultimately, a hash table’s efficiency depends on three factors:
+• How much data we’re storing in the hash table
+• How many cells are available in the hash table
+• Which hash function we’re using
+
+A good hash function, therefore, is one that distributes its data across all available cells. The more we can spread out our data, the fewer collisions we will have.
+
+## The Great Balancing Act
+A good hash tablestrikes a balance of avoiding collisions while not consuming lots of memory.
+This ratio of data to cells is called the load factor. Using this terminology, we’d say that the ideal load factor is 0.7 (7 elements / 10 cells).
