@@ -13,3 +13,4 @@ def average_celsius(fahrenheit_readings):
 
     # Calculate and return the mean average
     return sum / len(celsius_numbers)
+
