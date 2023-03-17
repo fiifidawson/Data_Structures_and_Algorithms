@@ -1,4 +1,4 @@
-### Chapter 2 [12/Feb/2023]  
+### Chapter 2 [12/Feb/2023]
 
 ## Order Arrays
 The elements in the array are organized in ascending or descending order.
