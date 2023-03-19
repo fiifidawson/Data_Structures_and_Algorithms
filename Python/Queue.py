@@ -1,5 +1,3 @@
-""" Implementing Linked Lists"""
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -80,3 +78,46 @@ class LinkedList:
         # We change the link of the current_node to point to the node_after_deleted_node, 
         # leaving the node we want to delete out of the list:
         current_node.next_node = node_after_deleted_node
+
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next_node = None
+        self.previous_node = None
+
+class DoublyLinkedList:
+    def __init__(self, first_node=None, last_node=None):
+        self.first_node = first_node
+        self.last_node = last_node
+
+    def insert_at_end(self, value):
+        new_node = Node(value)
+        # If there are no elements yet in the linked list:
+        if not self.first_node:
+            self.first_node = new_node
+            self.last_node = new_node
+        else: # If the linked list already has at least one node:
+            new_node.previous_node = self.last_node
+            self.last_node.next_node = new_node
+            self.last_node = new_node
+
+    def remove_from_front(self):
+        removed_node = self.first_node
+        self.first_node = self.first_node.next_node
+        return removed_node
+
+class Queue:
+    def __init__(self):
+        self.data = DoublyLinkedList()
+
+    def enqueue(self, element):
+        self.data.insert_at_end(element)
+
+    def dequeue(self):
+        removed_node = self.data.remove_from_front()
+        return removed_node.data if removed_node else None
+
+    def read(self):
+        return self.data.first_node.data if self.data.first_node else None

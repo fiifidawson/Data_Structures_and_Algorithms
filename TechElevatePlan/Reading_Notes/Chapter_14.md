@@ -40,6 +40,27 @@ To delete a node from the beginning of a linked list, all we need to do is perfo
 When it comes to deleting the final node of a linked list, the actual deletion takes one step—we just take the second-to-last node and make its link null. However, it takes N steps to even access the second-to-last node in the first place, since we need to start at the beginning of the list and follow the links until we reach it.
 
 Scenario                 Array        Linked List
-Insert at beginning   Worst case       Best case
-Insert at middle     Average case     Average case
-Insert at end         Best case        Worst case
+Delete at beginning   Worst case       Best case
+Delete at middle     Average case     Average case
+Delete at end         Best case        Worst case
+
+While deleting from the beginning or end of a linked list is straightforward, deleting from anywhere in the middle is slightly more involved.
+
+
+
+## Efficiency of Linked Lists
+Operation     Array              Linked list
+Reading       O(1)                 O(N)
+Search        O(N)                 O(N)
+Insertion     O(N)(O(1) at end)    O(N) (O(1) at beginning) Deletion      O(N)(O(1) at end)    O(N) (O(1) at beginning)
+
+## Doubly Linked Lists
+A doubly linked list is like a linked list except that each node has two links—one that points to the next node, and another that points to the previous node. In addition, the doubly linked list always keeps track of both the first and last nodes, instead of just the first node.
+
+Since a doubly linked list always knows where both its first and last nodes are, we can access each of them in a single step, or O(1). So, just as we can read, insert, or delete from the beginning of the list in O(1), we can do the same from the end of the list in O(1) as well.
+
+## Queues as Doubly Linked Lists
+Because doubly linked lists can insert data at the end in O(1) time and delete data from the front in O(1) time, they make the perfect underlying data structure for a queue.
+
+While arrays are O(1) for insertions at the end, they’re O(N) for deleting from the beginning.
+A doubly linked list, on the other hand, is O(1) for both inserting at the end and for deleting from the beginning. That’s what makes it a perfect fit for serving as the queue’s underlying data structure.
