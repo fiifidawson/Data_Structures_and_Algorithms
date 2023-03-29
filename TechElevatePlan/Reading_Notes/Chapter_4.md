@@ -1,4 +1,4 @@
-### Chapter 4 [15/Feb/2023]  
+### Chapter 4 [15/Feb/2023]
 
 ## Bubble Sort
 The Bubble Sort algorithm contains two significant kinds of steps:
