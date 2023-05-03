@@ -1,5 +1,5 @@
 class Stack:
-    def __init__(self):
+    def __init__(self, data):
         # Initialize an empty list to hold the elements of the stack
         self.data = []
 
