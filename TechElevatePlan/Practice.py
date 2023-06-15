@@ -1,15 +1,9 @@
-#to write an algorithm that takes an array of numbers and doubles each of the numbers within the array.
-def doubleArray(array, index):
-    if index >= len(array):
-        return
-
-    array[index] += 2
-    doubleArray(array, index+1)
-        
-    
-
-
-array = [1, 2, 3, 4]
-index = 0
-
-print(doubleArray(array, index))
+def add_until_100(array):
+    if len(array) == 0:
+        return 0
+    else:
+        sum_rest = add_until_100(array[1:])
+        if array[0] + sum_rest > 100:
+            return sum_rest
+        else:
+            return array[0] + sum_rest
