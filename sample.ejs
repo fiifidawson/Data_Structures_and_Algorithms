@@ -1,0 +1,15 @@
+<% compartment_details.forEach(function(compartment) { %>
+    <tr>
+        <td class="border text-center" style="height: 40px;"><%= compartment.volume %></td>
+        <td class="border text-center"><%= compartment.ullage %></td>
+    </tr>
+<% }); %>
+
+<% for (const  compartment in groupedCompartment) {%>
+    <% if (groupedCompartment.hasOwnProperty(compartment)) {%>
+        <tr>
+            <td class="border text-center" style="height: 40px;"><%= compartment.volume %></td>
+            <td class="border text-center"><%= compartment.ullage %></td>
+        </tr>
+     <%}%>
+<%}%>   
