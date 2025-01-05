@@ -1,10 +1,8 @@
 ### Chapter 12 [1/May/2023]
 
 ## Dynamic Programming
-Dynamic programming takes the flaws associated with recusrion or programming in general in terms on efficiency and 
-makes it better. Instead of initializing a new process to a similar old process, the results of the process is stored in a variable to be use later by the function.
-code—the
-mere storing of a computation in a variable—ended up changing the speed of our function from O(2^N) to O(N).
+Dynamic programming takes the flaws associated with recusrion or programming in general in terms on efficiency and makes it better. Instead of initializing a new process to a similar old process, the results of the process is stored in a variable to be use later by the function.
+code—the mere storing of a computation in a variable—ended up changing the speed of our function from O(2^N) to O(N).
 
 When a problem is solved by solving smaller versions of the same problem, the smaller problem is called a subproblem.
 
